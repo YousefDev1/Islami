@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Tajawal");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  src: url("../fonts/droid-font.ttf");
+  font-family: 'droid-font';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --bg-color1: #353535;
+  --bg-color2: #222222;
+  --shadow-color: #929292;
+  --color: white;
+  --color2: #cccccc;
+  --ar-font: 'droid-font';
+}
+
+.light-mode {
+  --bg-color2: #e4e4e4;
+  --bg-color1: #f3f3f3;
+  --shadow-color: rgba(0,0,0,.3);
+  --color: black;
+  --color2: #3C3C3C;
+  --ar-font: 'droid-font';
+}
+
+body {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header {
+  position: fixed;
+  background-color: var(--bg-color1);
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.header .main {
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .main .header__logo .header__title {
+  font-family: var(--ar-font);
+  color: var(--color);
+  font-size: 25px;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header .main .header__links {
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .main .header__links .header__link-about {
+  color: var(--color2);
+  text-decoration: none;
+  font-size: 15px;
+  font-family: var(--ar-font);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.content {
+  background-color: var(--bg-color2);
+  padding-top: 100px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .img {
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.content .img img {
+  max-height: 240px;
+}
+
+.content .text {
+  color: var(--color);
+  font-family: var(--ar-font);
+  font-size: 18px;
+  line-height: 2.5;
+}
+
+.content .text p {
+  direction: rtl;
+}
+
+.content .text a {
+  text-decoration: none;
+  color: #1C7EE5;
+}
+
+.change-mode {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 35px;
+  width: 35px;
+  z-index: 99999;
+  color: var(--color);
+  background-color: var(--bg-color1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  border-radius: 50%;
+  line-height: 2px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px var(--shadow-color);
+          box-shadow: 0px 0px 10px var(--shadow-color);
+}
+
+.change-mode span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=about.css.map */
