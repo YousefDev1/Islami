@@ -96,7 +96,11 @@
         </div>
     </div>
 
+    <div class="change-mode" id="change-mode">
+        <span><i class="pro-sun-o"></i></span>
+    </div>
 
+    <script src="js/theme.js"></script>
     
     <?php
         }

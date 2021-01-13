@@ -5,17 +5,38 @@
   font-family: 'droid-font';
 }
 
-:root {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
   --bg-color1: #353535;
   --bg-color2: #222222;
+
   --shadow-color: #929292;
+
+  --color: white;
+  --color2: #cccccc;
+
   --ar-font: 'droid-font';
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.light-mode{
+  --bg-color2: #e4e4e4;
+  --bg-color1: #f3f3f3;
+
+  --shadow-color: rgba(0,0,0,.3);
+
+  --color: black;
+  --color2: #3C3C3C;
+
+  --ar-font: 'droid-font';
+}
+
+body{
+  transition: 0.3s;
 }
 
 @import "./components/header";
@@ -44,7 +65,7 @@
     }
 
     .text{
-      color: white;
+      color: var(--color);
       font-family: var(--ar-font);
       font-size: 18px;
       line-height: 2.5;
@@ -59,3 +80,5 @@
       }
     }
 }
+
+@import "./components/color-mode"

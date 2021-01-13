@@ -41,5 +41,11 @@
             <p>تم استخدام api من موقع <a href="https://www.mp3quran.net/" target="_blank">mp3quran</a></p>
         </div>
     </div>
+
+    <div class="change-mode" id="change-mode">
+        <span><i class="pro-sun-o"></i></span>
+    </div>
+
+    <script src="js/theme.js"></script>
 </body>
 </html>
