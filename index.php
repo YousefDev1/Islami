@@ -6,7 +6,24 @@
     <link rel="stylesheet" href="css/pro/pro.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="./imgs/logo.jpg" type="image/x-icon">
-    <title>Islami</title>
+    <!-- Primary Meta Tags -->
+    <title>اسلامي</title>
+    <meta name="title" content="اسلامي">
+    <meta name="description" content="اسلامي هو موقع يحتوي علي عدد كبير من القراء و بعدة روايات للاستماع الي القران الكريم">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yousefpro.com">
+    <meta property="og:title" content="اسلامي">
+    <meta property="og:description" content="اسلامي هو موقع يحتوي علي عدد كبير من القراء و بعدة روايات للاستماع الي القران الكريم">
+    <meta property="og:image" content="./imgs/logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.yousefpro.com">
+    <meta property="twitter:title" content="اسلامي">
+    <meta property="twitter:description" content="اسلامي هو موقع يحتوي علي عدد كبير من القراء و بعدة روايات للاستماع الي القران الكريم">
+    <meta property="twitter:image" content="./imgs/logo.jpg">
 </head>
 <body>
     <?php

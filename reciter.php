@@ -23,6 +23,22 @@
         $sura_id = isset($_GET['sura_id']) && is_numeric($_GET['sura_id']) ? intval($_GET['sura_id']) : 1;
     ?>
     <title><?php echo $fetch_reciter['name'] ?></title>
+    <meta name="title" content="<?php echo $fetch_reciter['name'] ?>">
+    <meta name="description" content="اسلامي هو موقع يحتوي علي عدد كبير من القراء و بعدة روايات للاستماع الي القران الكريم">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yousefpro.com">
+    <meta property="og:title" content="<?php echo $fetch_reciter['name'] ?>">
+    <meta property="og:description" content="اسلامي هو موقع يحتوي علي عدد كبير من القراء و بعدة روايات للاستماع الي القران الكريم">
+    <meta property="og:image" content="./imgs/logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.yousefpro.com">
+    <meta property="twitter:title" content="<?php echo $fetch_reciter['name'] ?>">
+    <meta property="twitter:description" content="اسلامي هو موقع يحتوي علي عدد كبير من القراء و بعدة روايات للاستماع الي القران الكريم">
+    <meta property="twitter:image" content="./imgs/logo.jpg">
 </head>
 <body>
     
@@ -37,7 +53,7 @@
 
         <div class="row player">
             <div class="col-9 flex justify-center">
-                <audio controls>
+                <audio controls autoplay>
                     <?php 
                         if(strlen($sura_id) == 1)
                         {
@@ -79,6 +95,7 @@
             ?>
         </div>
     </div>
+
 
     
     <?php

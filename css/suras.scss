@@ -83,18 +83,14 @@ audio{
                 text-decoration: none;
             }
 
-            .card__ayat{
-                width: fit-content;
-                background-color: var(--bg-color2);
-                height: 30px;
-                width: 30px;
-                display: flex;
-                font-size: 15px;
+            .sura-ayat{
+                font-family: var(--ar-font);
                 justify-content: center;
                 align-items: center;
+                font-size: 15px;
                 border-radius: 50%;
-                padding: 20px;
-                font-family: 'Roboto';
+                padding: 10px;
+                color: #cccccc;
             }
         }
 
