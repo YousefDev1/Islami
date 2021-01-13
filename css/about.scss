@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Tajawal");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  src: url("../fonts/droid-font.ttf");
+  font-family: 'droid-font';
+}
+
+:root {
+  --bg-color1: #353535;
+  --bg-color2: #222222;
+  --shadow-color: #929292;
+  --ar-font: 'droid-font';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./components/header";
+
+.content{
+    background-color: var(--bg-color2);
+    padding-top: 100px;
+    height: 100vh;
+}
